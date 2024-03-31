@@ -43,3 +43,4 @@ jobs:
       - run:
           name: deploy-application
           command: ssh -o StrictHostKeyChecking=no ubuntu@ec2-16-16-218-78.eu-north-1.compute.amazonaws.com "export SERVER=\"$SERVER\"; export PRIVATE_KEY=\"$PRIVATE_KEY\"; rm -rf ~/Group/;git clone https://github.com/DMLFrancis/Group.git; source Group/deploy.sh"
+
